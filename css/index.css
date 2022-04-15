@@ -1,0 +1,192 @@
+.header {
+  height: 150px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #776E65;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.header p {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  padding-left: 20px;
+  color: #776E65;
+}
+
+.score {
+  width: 120px;
+  height: 35px;
+  background-color: #A49381;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 30px;
+  border-radius: 20px;
+}
+
+.buttonHed {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #BBAD9E;
+  cursor: pointer;
+}
+
+#root {
+  background-color: #A49381;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 4px;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#root .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+  padding: 4px;
+  height: 100px;
+}
+
+#root .cell {
+  padding: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #D1C9C0;
+}
+
+#root .cell-2 {
+  background-color: #EEE4DA;
+  color: #7C6E63;
+}
+
+#root .cell-4 {
+  background-color: #EEE1CC;
+  color: #7C6E63;
+}
+
+#root .cell-8 {
+  background-color: #F3B27D;
+  color: white;
+}
+
+#root .cell-16 {
+  background-color: #F69768;
+  color: white;
+}
+
+#root .cell-32 {
+  background-color: #F77E65;
+  color: white;
+}
+
+#root .cell-64 {
+  background-color: #F76042;
+  color: white;
+}
+
+#root .cell-128 {
+  background-color: #E24731;
+  color: white;
+}
+
+#root .cell-256 {
+  background-color: #EDD076;
+  color: white;
+}
+
+#root .cell-512 {
+  background-color: #EDCD67;
+  color: white;
+}
+
+#root .cell-1024 {
+  background-color: #EDCB59;
+  color: white;
+}
+
+#root .cell-2048 {
+  background-color: green;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+}
+
+#wrapper {
+  border: 5px solid #A49381;
+  background-color: #FAF8EF;
+  height: 570px;
+  width: 450px;
+  margin: 100px auto;
+}
+
+#wrapper .winner {
+  position: absolute;
+  background-image: url("../img/win.jpg");
+  height: 400px;
+  width: 400px;
+  opacity: 0.7;
+}
+
+#wrapper .loser {
+  position: absolute;
+  background-image: url("../img/loser.jpg");
+  height: 400px;
+  width: 400px;
+  opacity: 0.7;
+  background-size: cover;
+}
+/*# sourceMappingURL=index.css.map */

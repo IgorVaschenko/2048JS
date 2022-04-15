@@ -1,0 +1,37 @@
+@import './header.css';
+@import './board.css';
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+  }
+  
+  #wrapper {
+    border: 5px solid #A49381;
+    background-color: #FAF8EF;
+    height: 570px;
+    width: 450px;
+    margin: 100px auto;
+  }
+  
+  .winner {
+    position: absolute;
+    background-image: url('../img/win.jpg');
+    height: 400px;
+    width: 400px;
+    opacity: 0.7;
+  }
+
+  .loser {
+    position: absolute;
+    background-image: url('../img/loser.jpg');
+    height: 400px;
+    width: 400px;
+    opacity: 0.7;
+    background-size: cover;
+  }

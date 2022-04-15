@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game-board {
+  background-color: #350202;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 4px;
+  height: 600px;
+  width: 850px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+  padding: 4px;
+  height: 150px;
+}
+
+.cell {
+  padding: 10px;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 200px;
+}
+
+.cell-2 {
+  background-color: orange;
+}
+
+.cell-4 {
+  background-color: #27cfcf;
+}
+
+.cell-8 {
+  background-color: pink;
+}
+
+.cell-16 {
+  background-color: palevioletred;
+}
+
+.cell-32 {
+  background-color: greenyellow;
+}
+
+.cell-64 {
+  background-color: burlywood;
+}
+
+.cell-128 {
+  background-color: goldenrod;
+}
+
+.cell-256 {
+  background-color: rebeccapurple;
+}
+
+.cell-512 {
+  background-color: cyan;
+}
+
+.cell-1024 {
+  background-color: gold;
+}
+
+.cell-2048 {
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=index.css.map */

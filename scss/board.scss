@@ -1,0 +1,83 @@
+$sqr: 400px;
+@mixin bgAndColor( $bg, $col ) {
+    background-color: $bg;
+    color: $col;
+}
+
+#root {
+    background-color: #A49381;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 4px;
+    height: $sqr;
+    width: $sqr;
+    margin: 0 auto;
+
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 8px;
+        padding: 4px;
+        height: 100px;
+    }
+
+    .cell {
+        padding: 5px;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        color: #D1C9C0;
+    }
+
+    .cell-2 {
+        @include bgAndColor( #EEE4DA, #7C6E63);
+    }
+    
+    .cell-4 {
+        @include bgAndColor( #EEE1CC, #7C6E63);
+    }
+    
+    .cell-8 {
+        @include bgAndColor( #F3B27D, white);
+    }
+    
+    .cell-16 {
+        @include bgAndColor( #F69768, white);
+    }
+    
+    .cell-32 {
+        @include bgAndColor( #F77E65, white);
+    }
+    
+    .cell-64 {
+        @include bgAndColor( #F76042, white);
+    }
+    
+    .cell-128 {
+        @include bgAndColor( #F77E65, white);
+    }
+    
+    .cell-256 {
+        @include bgAndColor( #EDD076, white);
+    }
+    
+    .cell-512 {
+        @include bgAndColor( #F77E65, white);
+    }
+    
+    .cell-1024 {
+        @include bgAndColor( #EDCB59, white);
+    }
+    
+    .cell-2048 {
+        @include bgAndColor( green, white);
+    }
+
+}
